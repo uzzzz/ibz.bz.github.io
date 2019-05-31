@@ -11,11 +11,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="1、代码 pragma solidity ^0.4.0; contract D { uint public x; uint public amount; function D(uint _a) payable{ x = _a; amount = msg.value; } } contract E { event e(uint x,uint amount); D d = new D(4); function E(uint _u) payable{ e(d.x(),d.amount()); D d1 = new D(_u); e(d1.x(),d1.amount()); } function creatD(uint _x,uint _amount){ D d2 = (new D).value(_amount)(_x); e(d2.x(),d2.amount()); } } 2、创建合约E，并且存入100ETHER 3、执行合约E的creat D函数 4、查看合约事件 5、执行成功，扣除E合约相应以太币 阅读更多" />
 <meta property="og:description" content="1、代码 pragma solidity ^0.4.0; contract D { uint public x; uint public amount; function D(uint _a) payable{ x = _a; amount = msg.value; } } contract E { event e(uint x,uint amount); D d = new D(4); function E(uint _u) payable{ e(d.x(),d.amount()); D d1 = new D(_u); e(d1.x(),d1.amount()); } function creatD(uint _x,uint _amount){ D d2 = (new D).value(_amount)(_x); e(d2.x(),d2.amount()); } } 2、创建合约E，并且存入100ETHER 3、执行合约E的creat D函数 4、查看合约事件 5、执行成功，扣除E合约相应以太币 阅读更多" />
+<link rel="canonical" href="https://ibz.bz/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html" />
+<meta property="og:url" content="https://ibz.bz/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html" />
 <meta property="og:site_name" content="有组织在！" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-07-03T00:00:00+08:00" />
 <script type="application/ld+json">
-{"description":"1、代码 pragma solidity ^0.4.0; contract D { uint public x; uint public amount; function D(uint _a) payable{ x = _a; amount = msg.value; } } contract E { event e(uint x,uint amount); D d = new D(4); function E(uint _u) payable{ e(d.x(),d.amount()); D d1 = new D(_u); e(d1.x(),d1.amount()); } function creatD(uint _x,uint _amount){ D d2 = (new D).value(_amount)(_x); e(d2.x(),d2.amount()); } } 2、创建合约E，并且存入100ETHER 3、执行合约E的creat D函数 4、查看合约事件 5、执行成功，扣除E合约相应以太币 阅读更多","@type":"BlogPosting","url":"/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html","headline":"（六）以太坊开发，合约之间调用","dateModified":"2018-07-03T00:00:00+08:00","datePublished":"2018-07-03T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html"},"@context":"http://schema.org"}</script>
+{"description":"1、代码 pragma solidity ^0.4.0; contract D { uint public x; uint public amount; function D(uint _a) payable{ x = _a; amount = msg.value; } } contract E { event e(uint x,uint amount); D d = new D(4); function E(uint _u) payable{ e(d.x(),d.amount()); D d1 = new D(_u); e(d1.x(),d1.amount()); } function creatD(uint _x,uint _amount){ D d2 = (new D).value(_amount)(_x); e(d2.x(),d2.amount()); } } 2、创建合约E，并且存入100ETHER 3、执行合约E的creat D函数 4、查看合约事件 5、执行成功，扣除E合约相应以太币 阅读更多","@type":"BlogPosting","url":"https://ibz.bz/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html","headline":"（六）以太坊开发，合约之间调用","dateModified":"2018-07-03T00:00:00+08:00","datePublished":"2018-07-03T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ibz.bz/2018/07/03/ab935162a5b499d9320ea4ca6ebc550c.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -191,7 +193,7 @@ contract E {
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b3854d85fd2afc91025dfccfb80109b0";
+      hm.src = "https://hm.baidu.com/hm.js?9ff09892c537f053e8f7fd531878b002";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();

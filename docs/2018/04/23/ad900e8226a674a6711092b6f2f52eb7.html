@@ -11,11 +11,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="# 针对本地节点关闭开启特大BUG的处理，无数次踩坑的经验 &nbsp;本地节点关闭以后，再次开启会出现此种错误，楼主查询了好多资料，在此分享，望朋友少走弯路 # 是因为 使用kill -9 nodeos端口号，然后在此启动出现的BUG 先上bug图： 具体的解决方式，nodeos&nbsp; --resync&nbsp; &nbsp;重新加载 config.ini。注意事项两个杠杠，因为查询的好多资料是一个，又犯了很多错误。 # 现在楼主有问题，望大佬解答 本地的ubuntu 服务器上运行着 本地节点，准备去连接EOS 3.0测试网络，现在是把原来启动着的本地节点 使用 kill -9 杀掉，但是根据官方文档https://github.com/eosfansio/EOS-Party-Testnet 的连接测试网络，还是报了上图相同的bug，现在仍未找到解决办法，望大佬解答。BUG 图全部贴出来： 阅读更多" />
 <meta property="og:description" content="# 针对本地节点关闭开启特大BUG的处理，无数次踩坑的经验 &nbsp;本地节点关闭以后，再次开启会出现此种错误，楼主查询了好多资料，在此分享，望朋友少走弯路 # 是因为 使用kill -9 nodeos端口号，然后在此启动出现的BUG 先上bug图： 具体的解决方式，nodeos&nbsp; --resync&nbsp; &nbsp;重新加载 config.ini。注意事项两个杠杠，因为查询的好多资料是一个，又犯了很多错误。 # 现在楼主有问题，望大佬解答 本地的ubuntu 服务器上运行着 本地节点，准备去连接EOS 3.0测试网络，现在是把原来启动着的本地节点 使用 kill -9 杀掉，但是根据官方文档https://github.com/eosfansio/EOS-Party-Testnet 的连接测试网络，还是报了上图相同的bug，现在仍未找到解决办法，望大佬解答。BUG 图全部贴出来： 阅读更多" />
+<link rel="canonical" href="https://ibz.bz/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html" />
+<meta property="og:url" content="https://ibz.bz/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html" />
 <meta property="og:site_name" content="有组织在！" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-04-23T00:00:00+08:00" />
 <script type="application/ld+json">
-{"description":"# 针对本地节点关闭开启特大BUG的处理，无数次踩坑的经验 &nbsp;本地节点关闭以后，再次开启会出现此种错误，楼主查询了好多资料，在此分享，望朋友少走弯路 # 是因为 使用kill -9 nodeos端口号，然后在此启动出现的BUG 先上bug图： 具体的解决方式，nodeos&nbsp; --resync&nbsp; &nbsp;重新加载 config.ini。注意事项两个杠杠，因为查询的好多资料是一个，又犯了很多错误。 # 现在楼主有问题，望大佬解答 本地的ubuntu 服务器上运行着 本地节点，准备去连接EOS 3.0测试网络，现在是把原来启动着的本地节点 使用 kill -9 杀掉，但是根据官方文档https://github.com/eosfansio/EOS-Party-Testnet 的连接测试网络，还是报了上图相同的bug，现在仍未找到解决办法，望大佬解答。BUG 图全部贴出来： 阅读更多","@type":"BlogPosting","url":"/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html","headline":"EOS 本地节点启动BUG（无数采坑经验，原创）","dateModified":"2018-04-23T00:00:00+08:00","datePublished":"2018-04-23T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html"},"@context":"http://schema.org"}</script>
+{"description":"# 针对本地节点关闭开启特大BUG的处理，无数次踩坑的经验 &nbsp;本地节点关闭以后，再次开启会出现此种错误，楼主查询了好多资料，在此分享，望朋友少走弯路 # 是因为 使用kill -9 nodeos端口号，然后在此启动出现的BUG 先上bug图： 具体的解决方式，nodeos&nbsp; --resync&nbsp; &nbsp;重新加载 config.ini。注意事项两个杠杠，因为查询的好多资料是一个，又犯了很多错误。 # 现在楼主有问题，望大佬解答 本地的ubuntu 服务器上运行着 本地节点，准备去连接EOS 3.0测试网络，现在是把原来启动着的本地节点 使用 kill -9 杀掉，但是根据官方文档https://github.com/eosfansio/EOS-Party-Testnet 的连接测试网络，还是报了上图相同的bug，现在仍未找到解决办法，望大佬解答。BUG 图全部贴出来： 阅读更多","@type":"BlogPosting","url":"https://ibz.bz/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html","headline":"EOS 本地节点启动BUG（无数采坑经验，原创）","dateModified":"2018-04-23T00:00:00+08:00","datePublished":"2018-04-23T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ibz.bz/2018/04/23/ad900e8226a674a6711092b6f2f52eb7.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -177,7 +179,7 @@ table.gsc-input {
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b3854d85fd2afc91025dfccfb80109b0";
+      hm.src = "https://hm.baidu.com/hm.js?9ff09892c537f053e8f7fd531878b002";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();

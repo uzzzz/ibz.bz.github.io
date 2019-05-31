@@ -11,11 +11,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Go语言是谷歌推出的一种全新的编程语言，可以在不损失应用程序性能的情况下降低代码的复杂性。谷歌首席软件工程师罗布派克(Rob Pike)说:我们之所以开发Go，是因为过去10多年间软件开发的难度令人沮丧。 该语言自推出以来，Google的Go编程语言（Golang）越来越受主流用户的欢迎。在2016年12月的一份调研中，3,595名受访者中有89％表明他们在工作中或工作以外用Go语言编程；此外，在编程语言中，Go语言在专业知识和偏好方面排名最高。2017年7月，在Tiobe的年度编程语言排名中，Go语言从去年的第55名一跃跳到了第10名。 流行的go应用 Go语言的杀手级应用就是Docker，Docker应该大家都知道，目前在国内火的一塌糊涂 Codis，一种Redis的集权解决管理方案，很大部分go开发，由豆瓣推出。 Glow，类似Hadoop，也是一种大数据处理框架，性能非常好，是Hadoop的go的实现。 Cockroach数据库，译作蟑螂，意味着该数据库的生存能力很强，是高稳定性业务环境的首选数据库之一 使用golang语言读取文件 引入io/ioutil包，该包默认拥有以下函数供用户调用： 读取文件需要注意以下三个函数： 读取文件示例： 使用golang语言实现一个小顶堆 定义一个worker结构体， worker对象中存放很多待处理的request，pinding代表待处理的request数量，以worker为元素，实现一个小顶堆，每次Pop操作都返回负载最低的一个worker。 golang标准库中提供了heap结构的容器，所以只需要实现几个方法，就能实现一个堆类型的数据结构，使用时只需要调用标准库中提供的Init初始化接口、Pop接口、Push接口，就可以得到我们想要的结果。" />
 <meta property="og:description" content="Go语言是谷歌推出的一种全新的编程语言，可以在不损失应用程序性能的情况下降低代码的复杂性。谷歌首席软件工程师罗布派克(Rob Pike)说:我们之所以开发Go，是因为过去10多年间软件开发的难度令人沮丧。 该语言自推出以来，Google的Go编程语言（Golang）越来越受主流用户的欢迎。在2016年12月的一份调研中，3,595名受访者中有89％表明他们在工作中或工作以外用Go语言编程；此外，在编程语言中，Go语言在专业知识和偏好方面排名最高。2017年7月，在Tiobe的年度编程语言排名中，Go语言从去年的第55名一跃跳到了第10名。 流行的go应用 Go语言的杀手级应用就是Docker，Docker应该大家都知道，目前在国内火的一塌糊涂 Codis，一种Redis的集权解决管理方案，很大部分go开发，由豆瓣推出。 Glow，类似Hadoop，也是一种大数据处理框架，性能非常好，是Hadoop的go的实现。 Cockroach数据库，译作蟑螂，意味着该数据库的生存能力很强，是高稳定性业务环境的首选数据库之一 使用golang语言读取文件 引入io/ioutil包，该包默认拥有以下函数供用户调用： 读取文件需要注意以下三个函数： 读取文件示例： 使用golang语言实现一个小顶堆 定义一个worker结构体， worker对象中存放很多待处理的request，pinding代表待处理的request数量，以worker为元素，实现一个小顶堆，每次Pop操作都返回负载最低的一个worker。 golang标准库中提供了heap结构的容器，所以只需要实现几个方法，就能实现一个堆类型的数据结构，使用时只需要调用标准库中提供的Init初始化接口、Pop接口、Push接口，就可以得到我们想要的结果。" />
+<link rel="canonical" href="https://ibz.bz/2019/04/04/729887.html" />
+<meta property="og:url" content="https://ibz.bz/2019/04/04/729887.html" />
 <meta property="og:site_name" content="有组织在！" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2019-04-04T00:00:00+08:00" />
 <script type="application/ld+json">
-{"description":"Go语言是谷歌推出的一种全新的编程语言，可以在不损失应用程序性能的情况下降低代码的复杂性。谷歌首席软件工程师罗布派克(Rob Pike)说:我们之所以开发Go，是因为过去10多年间软件开发的难度令人沮丧。 该语言自推出以来，Google的Go编程语言（Golang）越来越受主流用户的欢迎。在2016年12月的一份调研中，3,595名受访者中有89％表明他们在工作中或工作以外用Go语言编程；此外，在编程语言中，Go语言在专业知识和偏好方面排名最高。2017年7月，在Tiobe的年度编程语言排名中，Go语言从去年的第55名一跃跳到了第10名。 流行的go应用 Go语言的杀手级应用就是Docker，Docker应该大家都知道，目前在国内火的一塌糊涂 Codis，一种Redis的集权解决管理方案，很大部分go开发，由豆瓣推出。 Glow，类似Hadoop，也是一种大数据处理框架，性能非常好，是Hadoop的go的实现。 Cockroach数据库，译作蟑螂，意味着该数据库的生存能力很强，是高稳定性业务环境的首选数据库之一 使用golang语言读取文件 引入io/ioutil包，该包默认拥有以下函数供用户调用： 读取文件需要注意以下三个函数： 读取文件示例： 使用golang语言实现一个小顶堆 定义一个worker结构体， worker对象中存放很多待处理的request，pinding代表待处理的request数量，以worker为元素，实现一个小顶堆，每次Pop操作都返回负载最低的一个worker。 golang标准库中提供了heap结构的容器，所以只需要实现几个方法，就能实现一个堆类型的数据结构，使用时只需要调用标准库中提供的Init初始化接口、Pop接口、Push接口，就可以得到我们想要的结果。","@type":"BlogPosting","url":"/2019/04/04/729887.html","headline":"一个正在悄然崛起的编程语言——Golang","dateModified":"2019-04-04T00:00:00+08:00","datePublished":"2019-04-04T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2019/04/04/729887.html"},"@context":"http://schema.org"}</script>
+{"description":"Go语言是谷歌推出的一种全新的编程语言，可以在不损失应用程序性能的情况下降低代码的复杂性。谷歌首席软件工程师罗布派克(Rob Pike)说:我们之所以开发Go，是因为过去10多年间软件开发的难度令人沮丧。 该语言自推出以来，Google的Go编程语言（Golang）越来越受主流用户的欢迎。在2016年12月的一份调研中，3,595名受访者中有89％表明他们在工作中或工作以外用Go语言编程；此外，在编程语言中，Go语言在专业知识和偏好方面排名最高。2017年7月，在Tiobe的年度编程语言排名中，Go语言从去年的第55名一跃跳到了第10名。 流行的go应用 Go语言的杀手级应用就是Docker，Docker应该大家都知道，目前在国内火的一塌糊涂 Codis，一种Redis的集权解决管理方案，很大部分go开发，由豆瓣推出。 Glow，类似Hadoop，也是一种大数据处理框架，性能非常好，是Hadoop的go的实现。 Cockroach数据库，译作蟑螂，意味着该数据库的生存能力很强，是高稳定性业务环境的首选数据库之一 使用golang语言读取文件 引入io/ioutil包，该包默认拥有以下函数供用户调用： 读取文件需要注意以下三个函数： 读取文件示例： 使用golang语言实现一个小顶堆 定义一个worker结构体， worker对象中存放很多待处理的request，pinding代表待处理的request数量，以worker为元素，实现一个小顶堆，每次Pop操作都返回负载最低的一个worker。 golang标准库中提供了heap结构的容器，所以只需要实现几个方法，就能实现一个堆类型的数据结构，使用时只需要调用标准库中提供的Init初始化接口、Pop接口、Push接口，就可以得到我们想要的结果。","@type":"BlogPosting","url":"https://ibz.bz/2019/04/04/729887.html","headline":"一个正在悄然崛起的编程语言——Golang","dateModified":"2019-04-04T00:00:00+08:00","datePublished":"2019-04-04T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ibz.bz/2019/04/04/729887.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -163,7 +165,7 @@ table.gsc-input {
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b3854d85fd2afc91025dfccfb80109b0";
+      hm.src = "https://hm.baidu.com/hm.js?9ff09892c537f053e8f7fd531878b002";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();

@@ -11,11 +11,13 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="转载请标注原文地址：https://blog.csdn.net/lilyssh/article/details/82911363 前言 最近要根据以太坊，做个数字货币，需要修改一些命令，就看了一下web3.js。 每次改完，都需要打包，放到Go Ethereum里测试，非常麻烦，就研究了一波怎么调试和怎么使用测试用例。 一、从官网寻找测试方法 1、从web3.js的github地址页面，看README.md，能看到测试命令： npm test 2、从package.json中可以看到npm test的测试方式： &quot;scripts&quot;: { &quot;build&quot;: &quot;gulp&quot;, &quot;watch&quot;: &quot;gulp watch&quot;, &quot;lint&quot;: &quot;jshint *.js lib&quot;, &quot;test&quot;: &quot;mocha; jshint *.js lib&quot;, &quot;test-coveralls&quot;: &quot;istanbul cover _mocha -- -R spec &amp;&amp; cat coverage/lcov.info | coveralls --verbose&quot; }, 看到web3.js是用mocha测试的。 二、使用WebStorm调试web3.js 1、点击Add Configuration，添加一个测试配置。 2、选择Mocha： 3、配置mocha： 4、debug： 接下来就可以愉快的调试啦！ 阅读更多" />
 <meta property="og:description" content="转载请标注原文地址：https://blog.csdn.net/lilyssh/article/details/82911363 前言 最近要根据以太坊，做个数字货币，需要修改一些命令，就看了一下web3.js。 每次改完，都需要打包，放到Go Ethereum里测试，非常麻烦，就研究了一波怎么调试和怎么使用测试用例。 一、从官网寻找测试方法 1、从web3.js的github地址页面，看README.md，能看到测试命令： npm test 2、从package.json中可以看到npm test的测试方式： &quot;scripts&quot;: { &quot;build&quot;: &quot;gulp&quot;, &quot;watch&quot;: &quot;gulp watch&quot;, &quot;lint&quot;: &quot;jshint *.js lib&quot;, &quot;test&quot;: &quot;mocha; jshint *.js lib&quot;, &quot;test-coveralls&quot;: &quot;istanbul cover _mocha -- -R spec &amp;&amp; cat coverage/lcov.info | coveralls --verbose&quot; }, 看到web3.js是用mocha测试的。 二、使用WebStorm调试web3.js 1、点击Add Configuration，添加一个测试配置。 2、选择Mocha： 3、配置mocha： 4、debug： 接下来就可以愉快的调试啦！ 阅读更多" />
+<link rel="canonical" href="https://ibz.bz/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html" />
+<meta property="og:url" content="https://ibz.bz/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html" />
 <meta property="og:site_name" content="有组织在！" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2018-09-30T00:00:00+08:00" />
 <script type="application/ld+json">
-{"description":"转载请标注原文地址：https://blog.csdn.net/lilyssh/article/details/82911363 前言 最近要根据以太坊，做个数字货币，需要修改一些命令，就看了一下web3.js。 \b每次改完，都需要打包\b，\b放到Go Ethereum里测试，非常麻烦，就研究了一波怎么调试和怎么使用测试用例。 一、从官网寻找测试方法 1、从web3.js的github地址页面\b，看README.md，能看到测试命令： npm test 2、从package.json中可以看到npm test的测试方式： &quot;scripts&quot;: { &quot;build&quot;: &quot;gulp&quot;, &quot;watch&quot;: &quot;gulp watch&quot;, &quot;lint&quot;: &quot;jshint *.js lib&quot;, &quot;test&quot;: &quot;mocha; jshint *.js lib&quot;, &quot;test-coveralls&quot;: &quot;istanbul cover _mocha -- -R spec &amp;&amp; cat coverage/lcov.info | coveralls --verbose&quot; }, 看到web3.js是用mocha测试的。 二、使用WebStorm调试web3.js 1、点击Add Configuration，添加一个测试配置。 2、选择Mocha： 3、配置mocha： 4、debug： 接下来就可以愉快的调试啦！ 阅读更多","@type":"BlogPosting","url":"/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html","headline":"go-ethereum 以太坊 web3.js 控制台 调试","dateModified":"2018-09-30T00:00:00+08:00","datePublished":"2018-09-30T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html"},"@context":"http://schema.org"}</script>
+{"description":"转载请标注原文地址：https://blog.csdn.net/lilyssh/article/details/82911363 前言 最近要根据以太坊，做个数字货币，需要修改一些命令，就看了一下web3.js。 \b每次改完，都需要打包\b，\b放到Go Ethereum里测试，非常麻烦，就研究了一波怎么调试和怎么使用测试用例。 一、从官网寻找测试方法 1、从web3.js的github地址页面\b，看README.md，能看到测试命令： npm test 2、从package.json中可以看到npm test的测试方式： &quot;scripts&quot;: { &quot;build&quot;: &quot;gulp&quot;, &quot;watch&quot;: &quot;gulp watch&quot;, &quot;lint&quot;: &quot;jshint *.js lib&quot;, &quot;test&quot;: &quot;mocha; jshint *.js lib&quot;, &quot;test-coveralls&quot;: &quot;istanbul cover _mocha -- -R spec &amp;&amp; cat coverage/lcov.info | coveralls --verbose&quot; }, 看到web3.js是用mocha测试的。 二、使用WebStorm调试web3.js 1、点击Add Configuration，添加一个测试配置。 2、选择Mocha： 3、配置mocha： 4、debug： 接下来就可以愉快的调试啦！ 阅读更多","@type":"BlogPosting","url":"https://ibz.bz/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html","headline":"go-ethereum 以太坊 web3.js 控制台 调试","dateModified":"2018-09-30T00:00:00+08:00","datePublished":"2018-09-30T00:00:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://ibz.bz/2018/09/30/74973b26ed5ed9d8e9ffb1740ea35d8d.html"},"@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -204,7 +206,7 @@ table.gsc-input {
     var _hmt = _hmt || [];
     (function() {
       var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?b3854d85fd2afc91025dfccfb80109b0";
+      hm.src = "https://hm.baidu.com/hm.js?9ff09892c537f053e8f7fd531878b002";
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
